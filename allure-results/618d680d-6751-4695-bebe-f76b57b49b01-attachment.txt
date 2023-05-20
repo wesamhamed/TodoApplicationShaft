@@ -1,0 +1,27 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                            Test Method: 'com.qacart.todo.testcases.apis.todo.TodoApiTest.shouldBeAbleToGetATodoByID'                            
+                                             Test Description: 'should Be Able To Get A Todo By ID'                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Response status code: "201", status line: "HTTP/1.1 201 Created" @21-05-2023 00:10:04.0524 AM
+[ReportManager] Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE". @21-05-2023 00:10:04.0540 AM
+[ReportManager] Assertion Passed: Evaluating the actual response status code 201 against the expected one 201... @21-05-2023 00:10:04.0541 AM
+[ReportManager] Perform request "POST | Target Status Code: 201 | Service URL: https://qacart-todo.herokuapp.com/api/v1/users/register | Content Type: application/json | Response Time: 1820ms". @21-05-2023 00:10:05.0358 AM
+[ReportManager] Successfully created attachment 'API Request - Specifications' @21-05-2023 00:10:05.0360 AM
+[ReportManager] Successfully created attachment 'API Request - Body' @21-05-2023 00:10:05.0362 AM
+[ReportManager] Successfully created attachment 'API Response - JSON Body' @21-05-2023 00:10:05.0576 AM
+[ReportManager] Response status code: "201", status line: "HTTP/1.1 201 Created" @21-05-2023 00:10:06.0605 AM
+[ReportManager] Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE". @21-05-2023 00:10:06.0606 AM
+[ReportManager] Assertion Passed: Evaluating the actual response status code 201 against the expected one 201... @21-05-2023 00:10:06.0607 AM
+[ReportManager] Perform request "POST | Target Status Code: 201 | Service URL: https://qacart-todo.herokuapp.com/api/v1/tasks | Content Type: application/json | Response Time: 561ms". @21-05-2023 00:10:06.0628 AM
+[ReportManager] Successfully created attachment 'API Request - Specifications' @21-05-2023 00:10:06.0629 AM
+[ReportManager] Successfully created attachment 'API Request - Body' @21-05-2023 00:10:06.0630 AM
+[ReportManager] Successfully created attachment 'API Response - JSON Body' @21-05-2023 00:10:06.0631 AM
+[ReportManager] Response status code: "200", status line: "HTTP/1.1 200 OK" @21-05-2023 00:10:07.0149 AM
+[ReportManager] Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE". @21-05-2023 00:10:07.0150 AM
+[ReportManager] Assertion Passed: Evaluating the actual response status code 200 against the expected one 200... @21-05-2023 00:10:07.0150 AM
+[ReportManager] Perform request "GET | Target Status Code: 200 | Service URL: https://qacart-todo.herokuapp.com/api/v1/tasks/6469372ff226a3001470adf5 | Content Type: application/json | Response Time: 511ms". @21-05-2023 00:10:07.0165 AM
+[ReportManager] Successfully created attachment 'API Request - Specifications' @21-05-2023 00:10:07.0166 AM
+[ReportManager] Successfully created attachment 'API Response - JSON Body' @21-05-2023 00:10:07.0168 AM

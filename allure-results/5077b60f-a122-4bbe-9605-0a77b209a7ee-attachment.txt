@@ -1,0 +1,663 @@
+[INFO ] 2023-05-21 00:09:59.204 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                   Powered by SHAFT Engine v7.2.20230505_ALPHA                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-21 00:09:59.875 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2023-05-21 00:09:59.877 [main] ReportManager - File Action "DeleteFolder" successfully performed. With the following test data "Target Folder: "execution-summary"".
+[INFO ] 2023-05-21 00:09:59.879 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-05-21 00:10:00.111 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2023-05-21 00:10:00.772 [main] Utils - [TestNG] Running:
+  C:\Users\hp\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+[INFO ] 2023-05-21 00:10:00.805 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-21 00:10:00.910 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-05-21 00:10:00.920 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-05-21 00:10:01.076 [TestNG-test=TodoApplicationShaft-2] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                           Test Method: 'com.qacart.todo.testcases.apis.todo.TodoApiTest.shouldBeAbleToDeleteTodoByID'                           
+                                             Test Description: 'should Be Able To Delete Todo By ID'                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-21 00:10:01.076 [TestNG-test=TodoApplicationShaft-4] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                   Test Method: 'com.qacart.todo.testcases.apis.todo.TodoApiTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing'                   
+                                   Test Description: 'should Not Be Able To Add Todo If Is Completed Missing'                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-21 00:10:01.076 [TestNG-test=TodoApplicationShaft-3] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                            Test Method: 'com.qacart.todo.testcases.apis.todo.TodoApiTest.shouldBeAbleToGetATodoByID'                            
+                                             Test Description: 'should Be Able To Get A Todo By ID'                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-21 00:10:01.076 [TestNG-test=TodoApplicationShaft-1] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                              Test Method: 'com.qacart.todo.testcases.apis.todo.TodoApiTest.shouldBeAbleToAddTodo'                              
+                                                 Test Description: 'should Be Able To Add Todo'                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[DEBUG] 2023-05-21 00:10:03.088 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.088 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.088 [TestNG-test=TodoApplicationShaft-4] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.088 [TestNG-test=TodoApplicationShaft-1] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.205 [TestNG-test=TodoApplicationShaft-1] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.205 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.205 [TestNG-test=TodoApplicationShaft-4] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.205 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:03.898 [TestNG-test=TodoApplicationShaft-1] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:03.898 [TestNG-test=TodoApplicationShaft-3] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:03.898 [TestNG-test=TodoApplicationShaft-4] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:03.898 [TestNG-test=TodoApplicationShaft-2] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:03.903 [TestNG-test=TodoApplicationShaft-3] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:03.903 [TestNG-test=TodoApplicationShaft-2] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:03.903 [TestNG-test=TodoApplicationShaft-4] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:03.903 [TestNG-test=TodoApplicationShaft-1] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:03.904 [TestNG-test=TodoApplicationShaft-3] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.904 [TestNG-test=TodoApplicationShaft-4] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.904 [TestNG-test=TodoApplicationShaft-2] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.904 [TestNG-test=TodoApplicationShaft-1] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.905 [TestNG-test=TodoApplicationShaft-3] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.905 [TestNG-test=TodoApplicationShaft-2] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.905 [TestNG-test=TodoApplicationShaft-4] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.905 [TestNG-test=TodoApplicationShaft-1] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:03.908 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnection - Sending request: POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.908 [TestNG-test=TodoApplicationShaft-4] DefaultClientConnection - Sending request: POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.908 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnection - Sending request: POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.908 [TestNG-test=TodoApplicationShaft-1] DefaultClientConnection - Sending request: POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.910 [TestNG-test=TodoApplicationShaft-1] wire -  >> "POST /api/v1/users/register HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.910 [TestNG-test=TodoApplicationShaft-2] wire -  >> "POST /api/v1/users/register HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.910 [TestNG-test=TodoApplicationShaft-4] wire -  >> "POST /api/v1/users/register HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.910 [TestNG-test=TodoApplicationShaft-3] wire -  >> "POST /api/v1/users/register HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.912 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.912 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.912 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.912 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.912 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Content-Length: 111[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Content-Length: 102[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Content-Length: 104[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Content-Length: 106[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-3] headers - >> POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-4] headers - >> POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-1] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.913 [TestNG-test=TodoApplicationShaft-2] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-4] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-3] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-2] headers - >> POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-4] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-3] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-1] headers - >> POST /api/v1/users/register HTTP/1.1
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-2] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-4] headers - >> Content-Length: 104
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-1] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-3] headers - >> Content-Length: 111
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-2] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-1] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-4] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-3] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-1] headers - >> Content-Length: 102
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-2] headers - >> Content-Length: 106
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-4] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-3] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-1] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-2] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-3] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-4] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:03.914 [TestNG-test=TodoApplicationShaft-1] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-2] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-4] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-3] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-2] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-1] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-2] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:03.915 [TestNG-test=TodoApplicationShaft-1] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:03.916 [TestNG-test=TodoApplicationShaft-3] wire -  >> "{"firstName":"Deedee","lastName":"Gutkowski","email":"tyrone.runolfsson@yahoo.com","password":"5wzneh3ei3w8us"}"
+[DEBUG] 2023-05-21 00:10:03.916 [TestNG-test=TodoApplicationShaft-4] wire -  >> "{"firstName":"Michael","lastName":"Lindgren","email":"wiley.herman@hotmail.com","password":"viu0obfv4g"}"
+[DEBUG] 2023-05-21 00:10:03.916 [TestNG-test=TodoApplicationShaft-1] wire -  >> "{"firstName":"Sung","lastName":"Breitenberg","email":"sherley.okeefe@yahoo.com","password":"rolpzam6"}"
+[DEBUG] 2023-05-21 00:10:03.916 [TestNG-test=TodoApplicationShaft-2] wire -  >> "{"firstName":"Bryan","lastName":"McLaughlin","email":"merrill.wuckert@gmail.com","password":"fwun6mg8aph"}"
+[DEBUG] 2023-05-21 00:10:04.470 [TestNG-test=TodoApplicationShaft-3] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Set-Cookie: userID=j%3A%226469372df226a3001470ade9%22; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Set-Cookie: firstName=Deedee; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.472 [TestNG-test=TodoApplicationShaft-3] wire -  << "Content-Length: 283[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] wire -  << "Etag: W/"11b-loT1ezEM5B0s4m91THVBIzKCykM"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] wire -  << "Date: Sat, 20 May 2023 21:10:05 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:04.473 [TestNG-test=TodoApplicationShaft-3] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8; Path=/
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Set-Cookie: userID=j%3A%226469372df226a3001470ade9%22; Path=/
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Set-Cookie: firstName=Deedee; Path=/
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Content-Length: 283
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Etag: W/"11b-loT1ezEM5B0s4m91THVBIzKCykM"
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Date: Sat, 20 May 2023 21:10:05 GMT
+[DEBUG] 2023-05-21 00:10:04.474 [TestNG-test=TodoApplicationShaft-3] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:04.482 [TestNG-test=TodoApplicationShaft-3] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.482 [TestNG-test=TodoApplicationShaft-3] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2023-05-21 00:10:04.505 [TestNG-test=TodoApplicationShaft-2] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.505 [TestNG-test=TodoApplicationShaft-1] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.505 [TestNG-test=TodoApplicationShaft-4] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-2] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-1] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.505 [TestNG-test=TodoApplicationShaft-4] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-1] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-2] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-4] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-1] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.507 [TestNG-test=TodoApplicationShaft-4] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.507 [TestNG-test=TodoApplicationShaft-4] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.506 [TestNG-test=TodoApplicationShaft-2] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.507 [TestNG-test=TodoApplicationShaft-1] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.507 [TestNG-test=TodoApplicationShaft-4] wire -  << "Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlYiIsImZpcnN0TmFtZSI6Ik1pY2hhZWwiLCJsYXN0TmFtZSI6IkxpbmRncmVuIiwiaWF0IjoxNjg0NjE3MDA1fQ.byozjlVpfNicwEQCt0EWNrHirLowqE_dCKQll5ZohZs; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.507 [TestNG-test=TodoApplicationShaft-2] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.507 [TestNG-test=TodoApplicationShaft-1] wire -  << "Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZiIsImZpcnN0TmFtZSI6IlN1bmciLCJsYXN0TmFtZSI6IkJyZWl0ZW5iZXJnIiwiaWF0IjoxNjg0NjE3MDA1fQ.FqnGaqFe-Z0yIW6WXgB4849XVN2VzB8IgRg6wpkFzXA; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Set-Cookie: userID=j%3A%226469372df226a3001470adef%22; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Set-Cookie: userID=j%3A%226469372df226a3001470adeb%22; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-2] wire -  << "Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Set-Cookie: firstName=Sung; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Set-Cookie: firstName=Michael; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-2] wire -  << "Set-Cookie: userID=j%3A%226469372df226a3001470aded%22; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-2] wire -  << "Set-Cookie: firstName=Bryan; Path=/[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Content-Length: 281[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-2] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Content-Length: 284[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Etag: W/"119-9mS8XvbEJ3097hotvAwwdKAC5wk"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Etag: W/"11c-rkxBKBq+znagUS0xyTkA01oUCy8"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-2] wire -  << "Content-Length: 282[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Date: Sat, 20 May 2023 21:10:05 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Date: Sat, 20 May 2023 21:10:05 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-1] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-2] wire -  << "Etag: W/"11a-YBibaxiKpu347/lPg7ikkSt76gs"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.508 [TestNG-test=TodoApplicationShaft-4] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-1] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] wire -  << "Date: Sat, 20 May 2023 21:10:05 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-1] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-1] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-1] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-1] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-1] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-2] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:04.509 [TestNG-test=TodoApplicationShaft-4] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZiIsImZpcnN0TmFtZSI6IlN1bmciLCJsYXN0TmFtZSI6IkJyZWl0ZW5iZXJnIiwiaWF0IjoxNjg0NjE3MDA1fQ.FqnGaqFe-Z0yIW6WXgB4849XVN2VzB8IgRg6wpkFzXA; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Set-Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlYiIsImZpcnN0TmFtZSI6Ik1pY2hhZWwiLCJsYXN0TmFtZSI6IkxpbmRncmVuIiwiaWF0IjoxNjg0NjE3MDA1fQ.byozjlVpfNicwEQCt0EWNrHirLowqE_dCKQll5ZohZs; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Set-Cookie: userID=j%3A%226469372df226a3001470adeb%22; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Set-Cookie: userID=j%3A%226469372df226a3001470adef%22; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Set-Cookie: userID=j%3A%226469372df226a3001470aded%22; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Set-Cookie: firstName=Michael; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Set-Cookie: firstName=Sung; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Set-Cookie: firstName=Bryan; Path=/
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Content-Length: 281
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Content-Length: 284
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Etag: W/"119-9mS8XvbEJ3097hotvAwwdKAC5wk"
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Etag: W/"11c-rkxBKBq+znagUS0xyTkA01oUCy8"
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Date: Sat, 20 May 2023 21:10:05 GMT
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Content-Length: 282
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Etag: W/"11a-YBibaxiKpu347/lPg7ikkSt76gs"
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Date: Sat, 20 May 2023 21:10:05 GMT
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Date: Sat, 20 May 2023 21:10:05 GMT
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-4] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-1] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.510 [TestNG-test=TodoApplicationShaft-2] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.511 [TestNG-test=TodoApplicationShaft-1] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2023-05-21 00:10:04.511 [TestNG-test=TodoApplicationShaft-2] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2023-05-21 00:10:04.511 [TestNG-test=TodoApplicationShaft-4] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:04.511 [TestNG-test=TodoApplicationShaft-4] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:04.524 [TestNG-test=TodoApplicationShaft-1] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:04.524 [TestNG-test=TodoApplicationShaft-2] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:04.524 [TestNG-test=TodoApplicationShaft-3] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:04.524 [TestNG-test=TodoApplicationShaft-4] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:04.540 [TestNG-test=TodoApplicationShaft-2] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-05-21 00:10:04.540 [TestNG-test=TodoApplicationShaft-1] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-05-21 00:10:04.540 [TestNG-test=TodoApplicationShaft-3] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-05-21 00:10:04.540 [TestNG-test=TodoApplicationShaft-4] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:04.571 [TestNG-test=TodoApplicationShaft-2] wire -  << "{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA","userID":"6469372df226a3001470aded","firstName":"Bryan"}"
+[DEBUG] 2023-05-21 00:10:04.571 [TestNG-test=TodoApplicationShaft-1] wire -  << "{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZiIsImZpcnN0TmFtZSI6IlN1bmciLCJsYXN0TmFtZSI6IkJyZWl0ZW5iZXJnIiwiaWF0IjoxNjg0NjE3MDA1fQ.FqnGaqFe-Z0yIW6WXgB4849XVN2VzB8IgRg6wpkFzXA","userID":"6469372df226a3001470adef","firstName":"Sung"}"
+[DEBUG] 2023-05-21 00:10:04.571 [TestNG-test=TodoApplicationShaft-3] wire -  << "{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8","userID":"6469372df226a3001470ade9","firstName":"Deedee"}"
+[DEBUG] 2023-05-21 00:10:04.571 [TestNG-test=TodoApplicationShaft-4] wire -  << "{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlYiIsImZpcnN0TmFtZSI6Ik1pY2hhZWwiLCJsYXN0TmFtZSI6IkxpbmRncmVuIiwiaWF0IjoxNjg0NjE3MDA1fQ.byozjlVpfNicwEQCt0EWNrHirLowqE_dCKQll5ZohZs","userID":"6469372df226a3001470adeb","firstName":"Michael"}"
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-4] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@133accec
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-1] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@9121c98
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b49d69c
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2e118761
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-4] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-1] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[DEBUG] 2023-05-21 00:10:04.573 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-05-21 00:10:05.360 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:05.360 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:05.360 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:05.360 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:05.362 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:05.362 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:05.362 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:05.362 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Request - Body'
+[DEBUG] 2023-05-21 00:10:05.391 [TestNG-test=TodoApplicationShaft-1] cache - Couldn't find template in cache for "codeblock.ftl"("en_US", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-05-21 00:10:05.392 [TestNG-test=TodoApplicationShaft-1] cache - TemplateLoader.findTemplateSource("codeblock_en_US.ftl"): Not found
+[DEBUG] 2023-05-21 00:10:05.393 [TestNG-test=TodoApplicationShaft-1] cache - TemplateLoader.findTemplateSource("codeblock_en.ftl"): Not found
+[DEBUG] 2023-05-21 00:10:05.394 [TestNG-test=TodoApplicationShaft-1] cache - TemplateLoader.findTemplateSource("codeblock.ftl"): Found
+[DEBUG] 2023-05-21 00:10:05.394 [TestNG-test=TodoApplicationShaft-1] cache - Loading template for "codeblock.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/hp/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/markup/codeblock.ftl"
+[DEBUG] 2023-05-21 00:10:05.552 [TestNG-test=TodoApplicationShaft-1] cache - Couldn't find template in cache for "codeblock.json.ftl"("en_US", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-05-21 00:10:05.552 [TestNG-test=TodoApplicationShaft-1] cache - TemplateLoader.findTemplateSource("codeblock.json_en_US.ftl"): Not found
+[DEBUG] 2023-05-21 00:10:05.553 [TestNG-test=TodoApplicationShaft-1] cache - TemplateLoader.findTemplateSource("codeblock.json_en.ftl"): Not found
+[DEBUG] 2023-05-21 00:10:05.553 [TestNG-test=TodoApplicationShaft-1] cache - TemplateLoader.findTemplateSource("codeblock.json.ftl"): Found
+[DEBUG] 2023-05-21 00:10:05.553 [TestNG-test=TodoApplicationShaft-1] cache - Loading template for "codeblock.json.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/hp/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/markup/codeblock.json.ftl"
+[INFO ] 2023-05-21 00:10:05.576 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:05.576 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:05.576 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:05.576 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[DEBUG] 2023-05-21 00:10:06.051 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.051 [TestNG-test=TodoApplicationShaft-4] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.051 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.051 [TestNG-test=TodoApplicationShaft-1] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.052 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.052 [TestNG-test=TodoApplicationShaft-4] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.052 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.052 [TestNG-test=TodoApplicationShaft-1] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnection - Sending request: POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] wire -  >> "POST /api/v1/tasks HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.438 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Content-Length: 48[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> Content-Length: 48
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:06.439 [TestNG-test=TodoApplicationShaft-2] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:06.440 [TestNG-test=TodoApplicationShaft-2] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:06.440 [TestNG-test=TodoApplicationShaft-2] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:06.440 [TestNG-test=TodoApplicationShaft-2] wire -  >> "{"item":"Absalom, Absalom!","isCompleted":false}"
+[DEBUG] 2023-05-21 00:10:06.449 [TestNG-test=TodoApplicationShaft-4] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:06.449 [TestNG-test=TodoApplicationShaft-4] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:06.449 [TestNG-test=TodoApplicationShaft-4] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:06.449 [TestNG-test=TodoApplicationShaft-4] DefaultClientConnection - Sending request: POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.449 [TestNG-test=TodoApplicationShaft-4] wire -  >> "POST /api/v1/tasks HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlYiIsImZpcnN0TmFtZSI6Ik1pY2hhZWwiLCJsYXN0TmFtZSI6IkxpbmRncmVuIiwiaWF0IjoxNjg0NjE3MDA1fQ.byozjlVpfNicwEQCt0EWNrHirLowqE_dCKQll5ZohZs[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Content-Length: 23[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlYiIsImZpcnN0TmFtZSI6Ik1pY2hhZWwiLCJsYXN0TmFtZSI6IkxpbmRncmVuIiwiaWF0IjoxNjg0NjE3MDA1fQ.byozjlVpfNicwEQCt0EWNrHirLowqE_dCKQll5ZohZs
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Content-Length: 23
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:06.450 [TestNG-test=TodoApplicationShaft-4] wire -  >> "{"item":"Learn Appium"}"
+[DEBUG] 2023-05-21 00:10:06.462 [TestNG-test=TodoApplicationShaft-1] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:06.462 [TestNG-test=TodoApplicationShaft-1] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:06.462 [TestNG-test=TodoApplicationShaft-1] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:06.462 [TestNG-test=TodoApplicationShaft-1] DefaultClientConnection - Sending request: POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.463 [TestNG-test=TodoApplicationShaft-1] wire -  >> "POST /api/v1/tasks HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.463 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZiIsImZpcnN0TmFtZSI6IlN1bmciLCJsYXN0TmFtZSI6IkJyZWl0ZW5iZXJnIiwiaWF0IjoxNjg0NjE3MDA1fQ.FqnGaqFe-Z0yIW6WXgB4849XVN2VzB8IgRg6wpkFzXA[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.463 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.463 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.463 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Content-Length: 51[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.464 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.464 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.464 [TestNG-test=TodoApplicationShaft-1] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZiIsImZpcnN0TmFtZSI6IlN1bmciLCJsYXN0TmFtZSI6IkJyZWl0ZW5iZXJnIiwiaWF0IjoxNjg0NjE3MDA1fQ.FqnGaqFe-Z0yIW6WXgB4849XVN2VzB8IgRg6wpkFzXA
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Content-Length: 51
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-1] wire -  >> "{"item":"Wildfire at Midnight","isCompleted":false}"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnection - Sending request: POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] wire -  >> "POST /api/v1/tasks HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.465 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Content-Length: 47[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> POST /api/v1/tasks HTTP/1.1
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Content-Length: 47
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:06.466 [TestNG-test=TodoApplicationShaft-3] wire -  >> "{"item":"Frequent Hearses","isCompleted":false}"
+[DEBUG] 2023-05-21 00:10:06.552 [TestNG-test=TodoApplicationShaft-4] wire -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Content-Length: 41[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Etag: W/"29-6r/RqTsrv9UltwKyzcuXEXN5hS4"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Date: Sat, 20 May 2023 21:10:07 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] DefaultClientConnection - Receiving response: HTTP/1.1 400 Bad Request
+[DEBUG] 2023-05-21 00:10:06.553 [TestNG-test=TodoApplicationShaft-4] headers - << HTTP/1.1 400 Bad Request
+[DEBUG] 2023-05-21 00:10:06.554 [TestNG-test=TodoApplicationShaft-4] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Content-Length: 41
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Etag: W/"29-6r/RqTsrv9UltwKyzcuXEXN5hS4"
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Date: Sat, 20 May 2023 21:10:07 GMT
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.555 [TestNG-test=TodoApplicationShaft-4] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:06.556 [TestNG-test=TodoApplicationShaft-4] ReportManager - Response status code: "400", status line: "HTTP/1.1 400 Bad Request"
+[INFO ] 2023-05-21 00:10:06.557 [TestNG-test=TodoApplicationShaft-4] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "400" and Actual "400". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:06.558 [TestNG-test=TodoApplicationShaft-4] wire -  << "{"message":"\"isCompleted\" is required"}"
+[DEBUG] 2023-05-21 00:10:06.559 [TestNG-test=TodoApplicationShaft-4] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@706dc4f4
+[DEBUG] 2023-05-21 00:10:06.559 [TestNG-test=TodoApplicationShaft-4] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[DEBUG] 2023-05-21 00:10:06.566 [TestNG-test=TodoApplicationShaft-2] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.566 [TestNG-test=TodoApplicationShaft-2] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.566 [TestNG-test=TodoApplicationShaft-2] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.566 [TestNG-test=TodoApplicationShaft-2] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.566 [TestNG-test=TodoApplicationShaft-2] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] wire -  << "Content-Length: 164[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] wire -  << "Etag: W/"a4-KNMyY6R0na3ntJg1R9dBvalKYPc"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] wire -  << "Date: Sat, 20 May 2023 21:10:07 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Content-Length: 164
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Etag: W/"a4-KNMyY6R0na3ntJg1R9dBvalKYPc"
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Date: Sat, 20 May 2023 21:10:07 GMT
+[DEBUG] 2023-05-21 00:10:06.567 [TestNG-test=TodoApplicationShaft-2] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:06.568 [TestNG-test=TodoApplicationShaft-2] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.568 [TestNG-test=TodoApplicationShaft-2] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:06.569 [TestNG-test=TodoApplicationShaft-2] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:06.569 [TestNG-test=TodoApplicationShaft-2] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:06.570 [TestNG-test=TodoApplicationShaft-2] wire -  << "{"isCompleted":false,"_id":"6469372ff226a3001470adf1","item":"Absalom, Absalom!","userID":"6469372df226a3001470aded","createdAt":"2023-05-20T21:10:07.734Z","__v":0}"
+[DEBUG] 2023-05-21 00:10:06.570 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7914fd6f
+[DEBUG] 2023-05-21 00:10:06.570 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-05-21 00:10:06.574 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:06.576 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:06.578 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:06.587 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:06.588 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:06.589 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Content-Length: 167[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Etag: W/"a7-gi7zKM5ijXcnr7BcoAuZ2wpBF1w"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Date: Sat, 20 May 2023 21:10:07 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.592 [TestNG-test=TodoApplicationShaft-1] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Content-Length: 167
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Etag: W/"a7-gi7zKM5ijXcnr7BcoAuZ2wpBF1w"
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Date: Sat, 20 May 2023 21:10:07 GMT
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.593 [TestNG-test=TodoApplicationShaft-1] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:06.594 [TestNG-test=TodoApplicationShaft-1] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:06.594 [TestNG-test=TodoApplicationShaft-1] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:06.595 [TestNG-test=TodoApplicationShaft-1] wire -  << "{"isCompleted":false,"_id":"6469372ff226a3001470adf3","item":"Wildfire at Midnight","userID":"6469372df226a3001470adef","createdAt":"2023-05-20T21:10:07.757Z","__v":0}"
+[DEBUG] 2023-05-21 00:10:06.595 [TestNG-test=TodoApplicationShaft-1] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3616d871
+[DEBUG] 2023-05-21 00:10:06.595 [TestNG-test=TodoApplicationShaft-1] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-05-21 00:10:06.599 [TestNG-test=TodoApplicationShaft-4] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: shouldNotBeAbleToAddTodoIfIsCompletedMissing'
+[DEBUG] 2023-05-21 00:10:06.602 [TestNG-test=TodoApplicationShaft-3] wire -  << "HTTP/1.1 201 Created[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.602 [TestNG-test=TodoApplicationShaft-3] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.602 [TestNG-test=TodoApplicationShaft-3] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "Content-Length: 163[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "Etag: W/"a3-2cj/3i0hV1XMkHsGoZFP2qq/d2s"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "Date: Sat, 20 May 2023 21:10:07 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << HTTP/1.1 201 Created
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Content-Length: 163
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Etag: W/"a3-2cj/3i0hV1XMkHsGoZFP2qq/d2s"
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Date: Sat, 20 May 2023 21:10:07 GMT
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:06.603 [TestNG-test=TodoApplicationShaft-3] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:06.605 [TestNG-test=TodoApplicationShaft-3] ReportManager - Response status code: "201", status line: "HTTP/1.1 201 Created"
+[INFO ] 2023-05-21 00:10:06.606 [TestNG-test=TodoApplicationShaft-3] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:06.607 [TestNG-test=TodoApplicationShaft-3] wire -  << "{"isCompleted":false,"_id":"6469372ff226a3001470adf5","item":"Frequent Hearses","userID":"6469372df226a3001470ade9","createdAt":"2023-05-20T21:10:07.766Z","__v":0}"
+[DEBUG] 2023-05-21 00:10:06.608 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@34745d2b
+[DEBUG] 2023-05-21 00:10:06.608 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-05-21 00:10:06.613 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:06.614 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:06.615 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:06.619 [TestNG-test=TodoApplicationShaft-1] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: shouldBeAbleToAddTodo'
+[INFO ] 2023-05-21 00:10:06.629 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:06.630 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Request - Body'
+[INFO ] 2023-05-21 00:10:06.631 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[DEBUG] 2023-05-21 00:10:06.633 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.633 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.643 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Get connection for route {s}->https://qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:06.644 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnectionOperator - Connecting to qacart-todo.herokuapp.com:443
+[DEBUG] 2023-05-21 00:10:07.006 [TestNG-test=TodoApplicationShaft-2] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnection - Sending request: DELETE /api/v1/tasks/6469372ff226a3001470adf1 HTTP/1.1
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "DELETE /api/v1/tasks/6469372ff226a3001470adf1 HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> DELETE /api/v1/tasks/6469372ff226a3001470adf1 HTTP/1.1
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlZCIsImZpcnN0TmFtZSI6IkJyeWFuIiwibGFzdE5hbWUiOiJNY0xhdWdobGluIiwiaWF0IjoxNjg0NjE3MDA1fQ.s_-rlSoqrlF0GDW1m1Qrs7bkKuEi1P7RbAlUpoBokOA
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:07.007 [TestNG-test=TodoApplicationShaft-2] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnection - Sending request: GET /api/v1/tasks/6469372ff226a3001470adf5 HTTP/1.1
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "GET /api/v1/tasks/6469372ff226a3001470adf5 HTTP/1.1[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Host: qacart-todo.herokuapp.com[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17)[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] wire -  >> "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> GET /api/v1/tasks/6469372ff226a3001470adf5 HTTP/1.1
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> Content-Type: application/json; charset=UTF-8
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjkzNzJkZjIyNmEzMDAxNDcwYWRlOSIsImZpcnN0TmFtZSI6IkRlZWRlZSIsImxhc3ROYW1lIjoiR3V0a293c2tpIiwiaWF0IjoxNjg0NjE3MDA1fQ.r50cG10Ypryan33rZ4TmmkUyWACY2EizBJHnepshdO8
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> Accept: */*
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> Host: qacart-todo.herokuapp.com
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> Connection: Keep-Alive
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17)
+[DEBUG] 2023-05-21 00:10:07.025 [TestNG-test=TodoApplicationShaft-3] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2023-05-21 00:10:07.140 [TestNG-test=TodoApplicationShaft-2] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.140 [TestNG-test=TodoApplicationShaft-2] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Content-Length: 164[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Etag: W/"a4-KNMyY6R0na3ntJg1R9dBvalKYPc"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Date: Sat, 20 May 2023 21:10:08 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << HTTP/1.1 200 OK
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Content-Length: 164
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Etag: W/"a4-KNMyY6R0na3ntJg1R9dBvalKYPc"
+[DEBUG] 2023-05-21 00:10:07.141 [TestNG-test=TodoApplicationShaft-2] headers - << Date: Sat, 20 May 2023 21:10:08 GMT
+[DEBUG] 2023-05-21 00:10:07.142 [TestNG-test=TodoApplicationShaft-2] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:07.142 [TestNG-test=TodoApplicationShaft-2] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:07.142 [TestNG-test=TodoApplicationShaft-2] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:07.144 [TestNG-test=TodoApplicationShaft-2] ReportManager - Response status code: "200", status line: "HTTP/1.1 200 OK"
+[INFO ] 2023-05-21 00:10:07.145 [TestNG-test=TodoApplicationShaft-2] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:07.146 [TestNG-test=TodoApplicationShaft-2] wire -  << "{"isCompleted":false,"_id":"6469372ff226a3001470adf1","item":"Absalom, Absalom!","userID":"6469372df226a3001470aded","createdAt":"2023-05-20T21:10:07.734Z","__v":0}"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3856c6e
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-2] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Server: Cowboy[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "X-Powered-By: Express[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Content-Length: 163[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Etag: W/"a3-2cj/3i0hV1XMkHsGoZFP2qq/d2s"[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.147 [TestNG-test=TodoApplicationShaft-3] wire -  << "Date: Sat, 20 May 2023 21:10:08 GMT[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] wire -  << "Via: 1.1 vegur[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] wire -  << "[\r][\n]"
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << HTTP/1.1 200 OK
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Server: Cowboy
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Connection: keep-alive
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << X-Powered-By: Express
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Content-Length: 163
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Etag: W/"a3-2cj/3i0hV1XMkHsGoZFP2qq/d2s"
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Date: Sat, 20 May 2023 21:10:08 GMT
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] headers - << Via: 1.1 vegur
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2023-05-21 00:10:07.148 [TestNG-test=TodoApplicationShaft-3] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[INFO ] 2023-05-21 00:10:07.149 [TestNG-test=TodoApplicationShaft-3] ReportManager - Response status code: "200", status line: "HTTP/1.1 200 OK"
+[INFO ] 2023-05-21 00:10:07.150 [TestNG-test=TodoApplicationShaft-3] ReportManager - Assertion "ValidateComparativeRelation" PASSED. Expected "200" and Actual "200". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[DEBUG] 2023-05-21 00:10:07.151 [TestNG-test=TodoApplicationShaft-3] wire -  << "{"isCompleted":false,"_id":"6469372ff226a3001470adf5","item":"Frequent Hearses","userID":"6469372df226a3001470ade9","createdAt":"2023-05-20T21:10:07.766Z","__v":0}"
+[DEBUG] 2023-05-21 00:10:07.151 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@578302a7
+[DEBUG] 2023-05-21 00:10:07.151 [TestNG-test=TodoApplicationShaft-3] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2023-05-21 00:10:07.163 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:07.164 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:07.166 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Request - Specifications'
+[INFO ] 2023-05-21 00:10:07.168 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'API Response - JSON Body'
+[INFO ] 2023-05-21 00:10:07.169 [TestNG-test=TodoApplicationShaft-2] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: shouldBeAbleToDeleteTodoByID'
+[INFO ] 2023-05-21 00:10:07.173 [TestNG-test=TodoApplicationShaft-3] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: shouldBeAbleToGetATodoByID'
+[INFO ] 2023-05-21 00:10:07.186 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            Starting execution of suite teardown configuration method                                            
+                                        'com.shaft.listeners.internal.ConfigurationHelper.suiteTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-21 00:10:07.187 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-05-21 00:10:07.188 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-05-21 00:10:07.188 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".

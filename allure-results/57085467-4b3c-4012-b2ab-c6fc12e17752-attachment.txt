@@ -1,0 +1,21 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                   Test Method: 'com.qacart.todo.testcases.apis.todo.TodoApiTest.shouldNotBeAbleToAddTodoIfIsCompletedMissing'                   
+                                   Test Description: 'should Not Be Able To Add Todo If Is Completed Missing'                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Response status code: "201", status line: "HTTP/1.1 201 Created" @21-05-2023 00:10:04.0524 AM
+[ReportManager] Assertion "ValidateComparativeRelation" PASSED. Expected "201" and Actual "201". Comparison Type "EQUALS". Validation Type "POSITIVE". @21-05-2023 00:10:04.0540 AM
+[ReportManager] Assertion Passed: Evaluating the actual response status code 201 against the expected one 201... @21-05-2023 00:10:04.0541 AM
+[ReportManager] Perform request "POST | Target Status Code: 201 | Service URL: https://qacart-todo.herokuapp.com/api/v1/users/register | Content Type: application/json | Response Time: 1820ms". @21-05-2023 00:10:05.0358 AM
+[ReportManager] Successfully created attachment 'API Request - Specifications' @21-05-2023 00:10:05.0359 AM
+[ReportManager] Successfully created attachment 'API Request - Body' @21-05-2023 00:10:05.0362 AM
+[ReportManager] Successfully created attachment 'API Response - JSON Body' @21-05-2023 00:10:05.0576 AM
+[ReportManager] Response status code: "400", status line: "HTTP/1.1 400 Bad Request" @21-05-2023 00:10:06.0556 AM
+[ReportManager] Assertion "ValidateComparativeRelation" PASSED. Expected "400" and Actual "400". Comparison Type "EQUALS". Validation Type "POSITIVE". @21-05-2023 00:10:06.0557 AM
+[ReportManager] Assertion Passed: Evaluating the actual response status code 400 against the expected one 400... @21-05-2023 00:10:06.0558 AM
+[ReportManager] Perform request "POST | Target Status Code: 400 | Service URL: https://qacart-todo.herokuapp.com/api/v1/tasks | Content Type: application/json | Response Time: 513ms". @21-05-2023 00:10:06.0573 AM
+[ReportManager] Successfully created attachment 'API Request - Specifications' @21-05-2023 00:10:06.0574 AM
+[ReportManager] Successfully created attachment 'API Request - Body' @21-05-2023 00:10:06.0576 AM
+[ReportManager] Successfully created attachment 'API Response - JSON Body' @21-05-2023 00:10:06.0578 AM
