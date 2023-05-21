@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  GLOBAL_TESTING_SCOPE: "!%regex[.*Test.*]"
+  GLOBAL_TESTING_SCOPE: "%regex[.*Test.*]"
   
 jobs:
   Ubuntu_Firefox_Grid:
