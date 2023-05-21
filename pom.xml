@@ -13,7 +13,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Make sure you point to the latest release version: https://github.com/ShaftHQ/SHAFT_ENGINE/releases -->
-        <shaft_engine.version>7.2.20230505_ALPHA</shaft_engine.version>
+        <shaft_engine.version>7.2.20230503</shaft_engine.version>
     </properties>
     <repositories>
         <repository>
