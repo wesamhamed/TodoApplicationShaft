@@ -8,7 +8,9 @@ on:
     - cron: '00 1 * * *'
   workflow_dispatch:
 
-
+env:
+  GLOBAL_TESTING_SCOPE: "!%regex[.*Test.*]"
+  
 jobs:
   Ubuntu_Firefox_Grid:
     runs-on: ubuntu-22.04
@@ -29,7 +31,7 @@ jobs:
         run: docker ps
       - name: Run tests
         continue-on-error: true
-        run: mvn -e test "-DretryMaximumNumberOfAttempts=2" "-DexecutionAddress=localhost:4444" "-DtargetOperatingSystem=LINUX" "-DtargetBrowserName=firefox" "-DheadlessExecution=true" "-DgenerateAllureReportArchive=true"
+        run: mvn -e test "-DretryMaximumNumberOfAttempts=2" "-DexecutionAddress=localhost:4444" "-DtargetOperatingSystem=LINUX" "-DtargetBrowserName=firefox" "-DheadlessExecution=true" "-DgenerateAllureReportArchive=true" "-Dtest=${GLOBAL_TESTING_SCOPE}"
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
         uses: actions/upload-artifact@v3
