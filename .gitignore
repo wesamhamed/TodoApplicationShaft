@@ -18,3 +18,4 @@ buildNumber.properties
 /GUI_Web/src/main/resources/properties/*.properties
 /GUI_Web_Basic/execution-summary/*.html
 /GUI_Web/execution-summary/*.html
+generate_allure_report.bat
