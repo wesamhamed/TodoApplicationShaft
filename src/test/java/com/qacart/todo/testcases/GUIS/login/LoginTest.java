@@ -16,34 +16,37 @@ public class LoginTest extends BaseTest {
     @Story("Login with Email and Password")
     @Description("It will login by filling the email and the password and navigate to the todo page")
     @Test(description = "Should be able to login with email and password")
-    public void shouldBeAbleToLoginWithEmailAndPassword(){
+    public void shouldBeAbleToLoginWithEmailAndPassword() {
 
         UserSteps userSteps = new UserSteps();
         RegisterRequestBody registerRequestBody = userSteps.generateUser();
-        userSteps.register(registerRequestBody,201);
+        userSteps.register(registerRequestBody, 201);
 
         LoginPage loginPage = new LoginPage(getDriver());
 
         boolean isWelcomeDisplayed = loginPage
                 .load()
-                .login(registerRequestBody.getEmail(),registerRequestBody.getPassword())
+                .login(registerRequestBody.getEmail(), registerRequestBody.getPassword())
                 .isWelcomeDisplayed();
 
         Assert.assertTrue(isWelcomeDisplayed);
     }
+
     @Story("Login with incorrect Password")
     @Description("It try login by filling the existing email and the incorrect password")
     @Test(description = "Should Not Be Able To Login If Password Is Not Correct")
-    public void ShouldNotBeAbleToLoginIfPasswordIsNotCorrect(){
+    public void ShouldNotBeAbleToLoginIfPasswordIsNotCorrect() {
 
         UserSteps userSteps = new UserSteps();
-        RegisterRequestBody registerRequestBody = userSteps.generateUser();
-        userSteps.register(registerRequestBody,201);
+
+        RegisterRequestBody registerRequestBody = userSteps.getRegisteredUser();
+
 
         LoginPage loginPage = new LoginPage(getDriver());
+
         boolean isErrorMessageDisplayed = loginPage
                 .load()
-                .loginIfPasswordIsNotCorrect(registerRequestBody.getEmail(),"wrong password")
+                .loginIfPasswordIsNotCorrect(registerRequestBody.getEmail(), "wrong password")
                 .isErrorMessageDisplayed();
 
         Assert.assertTrue(isErrorMessageDisplayed);
