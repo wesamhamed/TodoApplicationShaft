@@ -1,7 +1,6 @@
 package com.qacart.todo.testcases.apis.user;
 
-import com.github.javafaker.Faker;
-import com.qacart.todo.config.EndPoint;
+
 import com.qacart.todo.data.ErrorMessages;
 import com.qacart.todo.models.error.Error;
 import com.qacart.todo.models.login.requestBody.LoginRequestBody;
@@ -9,21 +8,16 @@ import com.qacart.todo.models.login.responseBody.LoginResponseBody;
 import com.qacart.todo.models.register.requestBody.RegisterRequestBody;
 import com.qacart.todo.models.register.responseBody.RegisterResponseBody;
 import com.qacart.todo.steps.user.UserSteps;
-import com.shaft.driver.SHAFT;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
-import java.util.HashMap;
-
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @Feature("User Feature")
-public class UserApiTest {
+public class UserAPITest {
     @Story("Should Be Able To register")
     @Test(description = "should Be Able To register")
     public void shouldBeAbleToRegister(){

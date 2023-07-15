@@ -20,7 +20,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
 @Feature("Todo Feature")
-public class TodoApiTest {
+public class TodoAPITest {
     @Story("Should Be Able To Add Todo")
     @Test(description = "should Be Able To Add Todo")
     public void shouldBeAbleToAddTodo(){

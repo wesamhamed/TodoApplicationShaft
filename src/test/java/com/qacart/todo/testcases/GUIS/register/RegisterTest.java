@@ -8,7 +8,6 @@ import com.qacart.todo.steps.user.UserSteps;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,16 +18,15 @@ public class RegisterTest extends BaseTest {
     @Test(description = "Should be able to register with firstname,lastname,email,password,and confirm password")
     public void shouldBeAbleToRegisterWithFirstNameAndLastNameAndEmailAndPasswordAndConfirmPassword(){
 
-        RegisterPage registerPage = new RegisterPage(getDriver());
+        RegisterPage registerPage =  RegisterPage.getInstance();
 
         UserSteps userSteps = new UserSteps();
         RegisterRequestBody registerRequest = userSteps.generateUser();
 
         boolean isWelcomeDisplayed = registerPage
-                .load()
-                .register(registerRequest.getFirstName(),registerRequest.getLastName(),registerRequest.getEmail()
-                        ,registerRequest.getPassword(),registerRequest.getPassword())
-                .isWelcomeDisplayed();
+                .load(getShaftWebDriver())
+                .register(getShaftWebDriver(),registerRequest)
+                .isWelcomeDisplayed(getShaftWebDriver());
 
         Assert.assertTrue(isWelcomeDisplayed);
     }
@@ -37,20 +35,19 @@ public class RegisterTest extends BaseTest {
     @Test(description = "should Not Be Able To Login With The registered Email")
     public void shouldNotBeAbleToRegisterWithTheRegisteredEmail(){
 
-        RegisterPage registerPage = new RegisterPage(getDriver());
+        RegisterPage registerPage =  RegisterPage.getInstance();
 
         UserSteps userSteps = new UserSteps();
         RegisterRequestBody registerRequestBody = userSteps.generateUser();
-        Response registerResponse = userSteps.register(registerRequestBody,201);
+        userSteps.register(registerRequestBody,201);
 
 
         boolean isErrorMessageDisplayed = registerPage
-                .load()
-                .registerWithTheRegisteredEmail(registerRequestBody.getFirstName(),registerRequestBody.getLastName()
-                        , registerRequestBody.getEmail(), registerRequestBody.getPassword(),registerRequestBody.getPassword())
-                .isErrorMessageDisplayed();
+                .load(getShaftWebDriver())
+                .registerWithTheRegisteredEmail(getShaftWebDriver(),registerRequestBody)
+                .isErrorMessageDisplayed(getShaftWebDriver());
 
         Assert.assertTrue(isErrorMessageDisplayed);
-        Assert.assertTrue(registerPage.getErrorMessage().equals(ErrorMessages.EMAIL_IS_ALREADY_REGISTERED));
+        Assert.assertEquals(registerPage.getErrorMessage(getShaftWebDriver()),ErrorMessages.EMAIL_IS_ALREADY_REGISTERED);
     }
 }

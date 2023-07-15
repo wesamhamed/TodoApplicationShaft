@@ -1,4 +1,4 @@
-name: E2E Tests
+name: Selenium E2E test
 
 on:
   pull_request:
@@ -31,19 +31,7 @@ jobs:
         run: docker ps
       - name: Run tests
         continue-on-error: true
-        run: mvn -e test "-DretryMaximumNumberOfAttempts=2" "-DexecutionAddress=localhost:4444" "-DtargetOperatingSystem=LINUX" "-DtargetBrowserName=firefox" "-DheadlessExecution=true" "-DgenerateAllureReportArchive=true" "-Dtest=${GLOBAL_TESTING_SCOPE}"
-      - name: Upload Allure Report as Pipeline Artifact
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Ubuntu_Firefox_Grid_Allure
-          path: "generatedReport_*.zip"
-      - name: Upload Execution Summary Report as Pipeline Artifact
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Ubuntu_Firefox_Grid_Summary
-          path: "execution-summary/ExecutionSummaryReport_*.html"
+        run: mvn clean test "-DretryMaximumNumberOfAttempts=2" "-DexecutionAddress=localhost:4444" "-DtargetOperatingSystem=LINUX" "-DtargetBrowserName=firefox" "-DheadlessExecution=true" "-DgenerateAllureReportArchive=true" "-Dtest=${GLOBAL_TESTING_SCOPE}"
       - name: Get Allure history
         uses: actions/checkout@v2
         continue-on-error: true
@@ -61,7 +49,20 @@ jobs:
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v2
         env:
-          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+           PUBLISH_BRANCH: gh-pages
+           PUBLISH_DIR: allure-history
+      - name: Upload Allure Report as Pipeline Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Ubuntu_Firefox_Grid_Allure
+          path: "generatedReport_*.zip"
+      - name: Upload Execution Summary Report as Pipeline Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Ubuntu_Firefox_Grid_Summary
+          path: "execution-summary/ExecutionSummaryReport_*.html"
+
 

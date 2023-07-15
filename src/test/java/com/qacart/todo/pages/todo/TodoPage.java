@@ -6,44 +6,53 @@ import com.qacart.todo.pages.newTodo.NewTodoPage;
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class TodoPage extends PageBase {
-    private SHAFT.GUI.WebDriver driver;
-    private static By welcomeMessage = By.cssSelector("[data-testid='welcome']");
-    private static By addButton = By.cssSelector("[data-testid='add']");
-    private static By todoItem = By.cssSelector("[data-testid='todo-item']");
-    private static By deleteButton = By.cssSelector("[data-testid='delete']");
-    private static By noTodosMessage = By.cssSelector("[data-testid='no-todos']");
+    private static TodoPage todoPage;
 
-    public TodoPage(SHAFT.GUI.WebDriver webDriver){
-        super(webDriver);
-        this.driver = webDriver;
+    // Elements
+    private By welcomeMessageLocator = By.cssSelector("[data-testid='welcome']");
+    private By addButtonLocator = By.cssSelector("[data-testid='add']");
+    private By todoItemLocator = By.cssSelector("[data-testid='todo-item']");
+    private By deleteButtonLocator = By.cssSelector("[data-testid='delete']");
+    private By noTodosMessageLocator = By.cssSelector("[data-testid='no-todos']");
+
+    public static TodoPage getInstance() {
+        if (todoPage == null) {
+            todoPage = new TodoPage();
+        }
+        return todoPage;
     }
 
-    @Step("Load Todo page")
-    public TodoPage load(){
-        driver.browser().navigateToURL(EndPoint.TODO_PAGE_ENDPOINT);
+    @Step("Visiting Todo page")
+    public TodoPage load(SHAFT.GUI.WebDriver shaftWebDriver) {
+        visit(shaftWebDriver,EndPoint.TODO_PAGE_ENDPOINT);
         return this;
     }
-    public boolean isWelcomeDisplayed(){
-        return this.driver.element().isElementDisplayed(welcomeMessage);
+    // Methods, Steps
+    @Step("Check if the welcome message is displayed")
+    public boolean isWelcomeDisplayed(SHAFT.GUI.WebDriver shaftWebDriver){
+        return isDisplayed(shaftWebDriver,welcomeMessageLocator);
     }
 
     @Step("Click on plus button")
-    public NewTodoPage clickOnPlusButton(){
-        this.driver.element().click(addButton);
-        return new NewTodoPage(this.driver);
+    public NewTodoPage clickOnPlusButton(SHAFT.GUI.WebDriver shaftWebDriver){
+        click(shaftWebDriver,addButtonLocator);
+        return NewTodoPage.getInstance();
     }
     @Step("Click on delete button")
-    public TodoPage clickOnDeleteButton(){
-        this.driver.element().click(deleteButton);
-        return this;
+    public TodoPage clickOnDeleteButton(SHAFT.GUI.WebDriver shaftWebDriver){
+        click(shaftWebDriver,deleteButtonLocator);
+        return TodoPage.getInstance();
     }
-    public String getTodoText(){
-       return this.driver.element().getText(todoItem);
+    @Step("Get the text of the todo")
+    public String getTodoText(SHAFT.GUI.WebDriver shaftWebDriver){
+        return getText(shaftWebDriver,todoItemLocator);
     }
-    public boolean isNoTodosMessageDisplayed(){
-        return this.driver.element().isElementDisplayed(noTodosMessage);
+    @Step("Check if no todos message is displayed")
+    public boolean isNoTodosMessageDisplayed(SHAFT.GUI.WebDriver shaftWebDriver){
+        return isDisplayed(shaftWebDriver,noTodosMessageLocator);
     }
 
 }

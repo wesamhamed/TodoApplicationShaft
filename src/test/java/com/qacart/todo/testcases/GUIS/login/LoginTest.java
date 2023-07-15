@@ -3,6 +3,7 @@ package com.qacart.todo.testcases.GUIS.login;
 import com.qacart.todo.base.BaseTest;
 import com.qacart.todo.data.ErrorMessages;
 import com.qacart.todo.models.register.requestBody.RegisterRequestBody;
+import com.qacart.todo.models.register.responseBody.RegisterResponseBody;
 import com.qacart.todo.pages.login.LoginPage;
 import com.qacart.todo.steps.user.UserSteps;
 import io.qameta.allure.Description;
@@ -22,12 +23,12 @@ public class LoginTest extends BaseTest {
         RegisterRequestBody registerRequestBody = userSteps.generateUser();
         userSteps.register(registerRequestBody, 201);
 
-        LoginPage loginPage = new LoginPage(getDriver());
+        LoginPage loginPage = LoginPage.getInstance();
 
         boolean isWelcomeDisplayed = loginPage
-                .load()
-                .login(registerRequestBody.getEmail(), registerRequestBody.getPassword())
-                .isWelcomeDisplayed();
+                .load(getShaftWebDriver())
+                .login(getShaftWebDriver(), registerRequestBody)
+                .isWelcomeDisplayed(getShaftWebDriver());
 
         Assert.assertTrue(isWelcomeDisplayed);
 
@@ -39,19 +40,21 @@ public class LoginTest extends BaseTest {
     public void ShouldNotBeAbleToLoginIfPasswordIsNotCorrect() {
 
         UserSteps userSteps = new UserSteps();
+        RegisterRequestBody registerRequestBody = userSteps.generateUser();
+        userSteps.register(registerRequestBody, 201);
+        registerRequestBody.setPassword("wrong password");
 
-        RegisterRequestBody registerRequestBody = userSteps.getRegisteredUser();
 
 
-        LoginPage loginPage = new LoginPage(getDriver());
+        LoginPage loginPage = LoginPage.getInstance();
 
         boolean isErrorMessageDisplayed = loginPage
-                .load()
-                .loginIfPasswordIsNotCorrect(registerRequestBody.getEmail(), "wrong password")
-                .isErrorMessageDisplayed();
+                .load(getShaftWebDriver())
+                .loginIfPasswordIsNotCorrect(getShaftWebDriver(),registerRequestBody)
+                .isErrorMessageDisplayed(getShaftWebDriver());
 
         Assert.assertTrue(isErrorMessageDisplayed);
-        Assert.assertEquals(loginPage.getErrorMessage(), ErrorMessages.EMAIL_AND_PASSWORD_NOT_CORRECT_LOGIN);
+        Assert.assertEquals(loginPage.getErrorMessage(getShaftWebDriver()), ErrorMessages.EMAIL_AND_PASSWORD_NOT_CORRECT_LOGIN);
 
     }
 }

@@ -1,8 +1,8 @@
 package com.qacart.todo.steps.user;
 
 import com.github.javafaker.Faker;
-import com.qacart.todo.api.user.login.LoginApi;
-import com.qacart.todo.api.user.register.RegisterApi;
+import com.qacart.todo.api.user.login.LoginAPI;
+import com.qacart.todo.api.user.register.RegisterAPI;
 import com.qacart.todo.models.login.requestBody.LoginRequestBody;
 import com.qacart.todo.models.register.requestBody.RegisterRequestBody;
 import io.restassured.http.Cookie;
@@ -16,47 +16,49 @@ public class UserSteps {
     private String userId;
     private String firstName;
 
-    public String getToken(){
+    public String getToken() {
         return this.accessToken;
     }
 
-    public List<Cookie> getCookies(){
+    public List<Cookie> getCookies() {
         return this.restAssuredCookies;
     }
 
-    public String getUserId(){
+    public String getUserId() {
         return this.userId;
     }
 
-    public String getFirstName(){
+    public String getFirstName() {
         return this.firstName;
     }
 
-    public RegisterRequestBody generateUser(){
+    public RegisterRequestBody generateUser() {
         Faker faker = new Faker();
         String firstName = faker.name().firstName();
         String lastName = faker.name().lastName();
         String email = faker.internet().emailAddress();
         String password = faker.internet().password();
-        return RegisterRequestBody.builder()
+        return RegisterRequestBody
+                .builder()
                 .firstName(firstName).lastName(lastName)
                 .email(email).password(password).build();
     }
-    public RegisterRequestBody getRegisteredUser(){
+
+    public RegisterRequestBody getRegisteredUser() {
         RegisterRequestBody registerRequest = generateUser();
-        Response response = RegisterApi.register(registerRequest,201);
+        Response response = RegisterAPI.getInstance().register(registerRequest, 201);
         this.restAssuredCookies = response.detailedCookies().asList();
         this.accessToken = response.body().path("access_token");
         this.userId = response.body().path("user_id");
         this.firstName = response.body().path("firstName");
         return registerRequest;
     }
-    public Response register(RegisterRequestBody registerRequest,int statusCode){
-        return RegisterApi.register(registerRequest,statusCode);
-    }
-    public Response login(LoginRequestBody loginRequest,int statusCode){
-        return LoginApi.login(loginRequest,statusCode);
+
+    public Response register(RegisterRequestBody registerRequest, int statusCode) {
+        return RegisterAPI.getInstance().register(registerRequest, statusCode);
     }
 
-
+    public Response login(LoginRequestBody loginRequest, int statusCode) {
+        return LoginAPI.getInstance().login(loginRequest, statusCode);
+    }
 }

@@ -6,9 +6,22 @@ import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class LoginApi {
+public class LoginAPI {
 
-    public static Response login(LoginRequestBody request,int statusCode){
+    private static LoginAPI loginAPI;
+
+    private LoginAPI() {
+
+    }
+
+    public static LoginAPI getInstance() {
+        if (loginAPI == null) {
+            loginAPI = new LoginAPI();
+        }
+        return loginAPI;
+    }
+
+    public Response login(LoginRequestBody request, int statusCode) {
         SHAFT.API api = new SHAFT.API(SHAFT.Properties.web.baseURL());
         return api.post(EndPoint.API_LOGIN_ENDPOINT)
                 .setRequestBody(request)

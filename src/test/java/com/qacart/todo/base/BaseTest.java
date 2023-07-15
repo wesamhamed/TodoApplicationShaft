@@ -3,7 +3,6 @@ package com.qacart.todo.base;
 
 import com.qacart.todo.utils.CookieUtils;
 import com.shaft.driver.SHAFT;
-
 import io.qameta.allure.Step;
 import io.restassured.http.Cookie;
 import org.testng.annotations.AfterMethod;
@@ -13,41 +12,44 @@ import org.testng.annotations.BeforeMethod;
 import java.util.List;
 
 public class BaseTest {
-    private final ThreadLocal<SHAFT.GUI.WebDriver> driver = new ThreadLocal<>();
+    private final ThreadLocal<SHAFT.GUI.WebDriver> shaftWebDriver = new ThreadLocal<>();
 
-    private SHAFT.GUI.WebDriver createWebDriver(){
-        SHAFT.GUI.WebDriver webDriver = driver.get();
-        if (webDriver == null) {
+    protected SHAFT.GUI.WebDriver getShaftWebDriver() {
+        return this.shaftWebDriver.get();
+    }
+    public void setShaftWebDriver(SHAFT.GUI.WebDriver shaftWebDriver) {
+        this.shaftWebDriver.set(shaftWebDriver);
+    }
+
+    private SHAFT.GUI.WebDriver createShaftWebDriver(){
+        SHAFT.GUI.WebDriver shaftWebDriver = getShaftWebDriver();
+        if (shaftWebDriver == null) {
             return new SHAFT.GUI.WebDriver();
         }
-        return webDriver;
+        return shaftWebDriver;
     }
     @BeforeMethod
     public void setUp(){
-        SHAFT.GUI.WebDriver webDriver = createWebDriver();
-        driver.set(webDriver);
+        SHAFT.GUI.WebDriver shaftWebDriver = createShaftWebDriver();
+        setShaftWebDriver(shaftWebDriver);
     }
     @AfterMethod
     public void tearDown(){
-        SHAFT.GUI.WebDriver webDriver = driver.get();
-        if (webDriver != null) {
-            driver.get().quit();
+        SHAFT.GUI.WebDriver shaftWebDriver = getShaftWebDriver();
+        if (shaftWebDriver != null) {
+            shaftWebDriver.quit();
         }
-        driver.remove();
+        this.shaftWebDriver.remove();
     }
 
-    protected SHAFT.GUI.WebDriver getDriver() {
-        return driver.get();
-    }
 
     @Step
     public void injectCookiesToBrowser(List<Cookie> restAssuredCookies){
         List<org.openqa.selenium.Cookie> seleniumCookies = CookieUtils.convertRestAssuredCookiesToSeleniumCookies(restAssuredCookies);
         for(org.openqa.selenium.Cookie cookie : seleniumCookies){
-            driver.get().browser().addCookie(cookie.getName(),cookie.getValue());
-
+            getShaftWebDriver().browser().addCookie(cookie.getName(),cookie.getValue());
         }
-        driver.get().browser().refreshCurrentPage();
+        getShaftWebDriver().browser().refreshCurrentPage();
     }
 
 }
