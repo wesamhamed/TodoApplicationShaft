@@ -1,4 +1,4 @@
-package com.qacart.todo.testcases.todo;
+package com.qacart.todo.testcases.GUIS.todo;
 
 import com.qacart.todo.base.BaseTest;
 import com.qacart.todo.models.register.requestBody.RegisterRequestBody;
@@ -76,5 +76,4 @@ public class TodoTest extends BaseTest {
 
         Assert.assertTrue(isNoTodosMessageDisplayed);
     }
-
 }

@@ -13,14 +13,27 @@ import org.testng.annotations.BeforeMethod;
 import java.util.List;
 
 public class BaseTest {
-    private static ThreadLocal<SHAFT.GUI.WebDriver> driver = new ThreadLocal<>();
+    private final ThreadLocal<SHAFT.GUI.WebDriver> driver = new ThreadLocal<>();
+
+    private SHAFT.GUI.WebDriver createWebDriver(){
+        SHAFT.GUI.WebDriver webDriver = driver.get();
+        if (webDriver == null) {
+            return new SHAFT.GUI.WebDriver();
+        }
+        return webDriver;
+    }
     @BeforeMethod
     public void setUp(){
-        driver.set(new SHAFT.GUI.WebDriver());
+        SHAFT.GUI.WebDriver webDriver = createWebDriver();
+        driver.set(webDriver);
     }
     @AfterMethod
     public void tearDown(){
-        driver.get().quit();
+        SHAFT.GUI.WebDriver webDriver = driver.get();
+        if (webDriver != null) {
+            driver.get().quit();
+        }
+        driver.remove();
     }
 
     protected SHAFT.GUI.WebDriver getDriver() {

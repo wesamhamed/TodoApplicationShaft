@@ -7,9 +7,9 @@ import com.shaft.driver.SHAFT;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 public class NewTodoPage extends PageBase {
-    private By newTodoInput = By.cssSelector("[data-testid='new-todo']");
-    private  By newTaskSubmit = By.cssSelector("[data-testid='submit-newTask']");
     private SHAFT.GUI.WebDriver driver;
+    private static By newTodoInput = By.cssSelector("[data-testid='new-todo']");
+    private static By newTaskSubmit = By.cssSelector("[data-testid='submit-newTask']");
     public NewTodoPage(SHAFT.GUI.WebDriver driver){
         super(driver);
         this.driver = driver;

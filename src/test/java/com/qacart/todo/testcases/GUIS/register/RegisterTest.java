@@ -1,4 +1,4 @@
-package com.qacart.todo.testcases.register;
+package com.qacart.todo.testcases.GUIS.register;
 
 import com.qacart.todo.base.BaseTest;
 import com.qacart.todo.data.ErrorMessages;

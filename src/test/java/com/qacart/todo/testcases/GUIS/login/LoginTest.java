@@ -1,4 +1,4 @@
-package com.qacart.todo.testcases.login;
+package com.qacart.todo.testcases.GUIS.login;
 
 import com.qacart.todo.base.BaseTest;
 import com.qacart.todo.data.ErrorMessages;
@@ -30,6 +30,7 @@ public class LoginTest extends BaseTest {
                 .isWelcomeDisplayed();
 
         Assert.assertTrue(isWelcomeDisplayed);
+
     }
 
     @Story("Login with incorrect Password")
@@ -51,5 +52,6 @@ public class LoginTest extends BaseTest {
 
         Assert.assertTrue(isErrorMessageDisplayed);
         Assert.assertEquals(loginPage.getErrorMessage(), ErrorMessages.EMAIL_AND_PASSWORD_NOT_CORRECT_LOGIN);
+
     }
 }

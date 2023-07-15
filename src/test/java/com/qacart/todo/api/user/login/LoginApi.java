@@ -15,6 +15,5 @@ public class LoginApi {
                 .setTargetStatusCode(statusCode)
                 .setContentType(ContentType.JSON)
                 .perform();
-
     }
 }

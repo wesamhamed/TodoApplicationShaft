@@ -6,18 +6,14 @@ import com.qacart.todo.pages.newTodo.NewTodoPage;
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TodoPage extends PageBase {
     private SHAFT.GUI.WebDriver driver;
-    private By welcomeMessage = By.cssSelector("[data-testid='welcome']");
-    private By addButton = By.cssSelector("[data-testid='add']");
-    private By todoItem = By.cssSelector("[data-testid='todo-item']");
-    private By deleteButton = By.cssSelector("[data-testid='delete']");
-    private By noTodosMessage = By.cssSelector("[data-testid='no-todos']");
+    private static By welcomeMessage = By.cssSelector("[data-testid='welcome']");
+    private static By addButton = By.cssSelector("[data-testid='add']");
+    private static By todoItem = By.cssSelector("[data-testid='todo-item']");
+    private static By deleteButton = By.cssSelector("[data-testid='delete']");
+    private static By noTodosMessage = By.cssSelector("[data-testid='no-todos']");
 
     public TodoPage(SHAFT.GUI.WebDriver webDriver){
         super(webDriver);
@@ -35,12 +31,12 @@ public class TodoPage extends PageBase {
 
     @Step("Click on plus button")
     public NewTodoPage clickOnPlusButton(){
-        this.driver.element().click(this.addButton);
+        this.driver.element().click(addButton);
         return new NewTodoPage(this.driver);
     }
     @Step("Click on delete button")
     public TodoPage clickOnDeleteButton(){
-        this.driver.element().click(this.deleteButton);
+        this.driver.element().click(deleteButton);
         return this;
     }
     public String getTodoText(){
