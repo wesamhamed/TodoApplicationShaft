@@ -5,21 +5,19 @@ import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.given;
+public class SeedApiActController {
 
-public class SeedAPI {
+    private static SeedApiActController act;
 
-    private static SeedAPI seedAPi;
-
-    private SeedAPI() {
+    private SeedApiActController() {
 
     }
 
-    public static SeedAPI getInstance() {
-        if (seedAPi == null) {
-            seedAPi = new SeedAPI();
+    public static SeedApiActController getSeedApiActController() {
+        if (act == null) {
+            return new SeedApiActController();
         }
-        return seedAPi;
+        return act;
     }
 
     public Response setupDatabase() {

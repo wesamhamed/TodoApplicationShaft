@@ -6,20 +6,21 @@ import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class TodoAPI {
-    private static TodoAPI todoAPI;
+public class TodoApiActController {
 
-    private TodoAPI() {
+    private static TodoApiActController act;
+
+    private TodoApiActController() {
 
     }
 
-    public static TodoAPI getInstance() {
-        if (todoAPI == null) {
-            todoAPI = new TodoAPI();
+
+    public static TodoApiActController getTodoApiActController() {
+        if (act == null) {
+            return new TodoApiActController();
         }
-        return todoAPI;
+        return act;
     }
-
     public Response addTodo(AddTodoRequestBody request, String token, int statusCode) {
         SHAFT.API api = new SHAFT.API(SHAFT.Properties.web.baseURL());
         return api.post(EndPoint.API_TODO_ENDPOINT)
@@ -47,5 +48,5 @@ public class TodoAPI {
                 .setContentType(ContentType.JSON)
                 .perform();
     }
-}
 
+}

@@ -6,19 +6,19 @@ import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class LoginAPI {
+public class LoginApiActController {
 
-    private static LoginAPI loginAPI;
+    private static LoginApiActController act;
 
-    private LoginAPI() {
-
+    private LoginApiActController() {
     }
 
-    public static LoginAPI getInstance() {
-        if (loginAPI == null) {
-            loginAPI = new LoginAPI();
+
+    public static LoginApiActController getLoginApiActController() {
+        if (act == null) {
+            return new LoginApiActController();
         }
-        return loginAPI;
+        return act;
     }
 
     public Response login(LoginRequestBody request, int statusCode) {

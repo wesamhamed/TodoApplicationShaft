@@ -1,31 +1,40 @@
 package com.qacart.todo.pages.home;
 
-import com.qacart.todo.base.PageBase;
-import com.qacart.todo.config.EndPoint;
-import com.shaft.driver.SHAFT;
-import io.qameta.allure.Step;
-
-public class HomePage extends PageBase {
+public class HomePage {
 
     private static HomePage homePage;
-    private SHAFT.GUI.WebDriver driver;
-    // Elements
 
-    // Constructor
-    private HomePage() {
-        super();
+    private HomePageGetController get;
+    private HomePageActController act;
+    private HomePageVerifyController verify;
+
+    public HomePageActController act() {
+        return act;
     }
 
-    public static HomePage getInstance() {
+    public HomePageVerifyController verify() {
+        return verify;
+    }
+
+    public HomePageGetController get() {
+        return get;
+    }
+
+
+    private HomePage() {
+    }
+
+    private HomePage(HomePageGetController get, HomePageActController act, HomePageVerifyController verify) {
+        this.get = get;
+        this.act = act;
+        this.verify = verify;
+    }
+
+    public static HomePage getHomePage() {
         if (homePage == null) {
-            homePage = new HomePage();
+            homePage = new HomePage(HomePageGetController.getHomePageGetController(), HomePageActController.getHomePageActController(), HomePageVerifyController.getHomePageVerifyController());
         }
         return homePage;
     }
 
-    @Step("Visiting the home page")
-    public HomePage load(SHAFT.GUI.WebDriver shaftWebDriver) {
-        visit(shaftWebDriver,EndPoint.HOME_PAGE_ENDPOINT);
-        return this;
-    }
 }

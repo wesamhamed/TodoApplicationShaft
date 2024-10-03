@@ -6,19 +6,20 @@ import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+public class RegisterApiActController {
 
-public class RegisterAPI {
-    private static RegisterAPI registerAPI;
+    private static RegisterApiActController act;
 
-    private RegisterAPI() {
+    private RegisterApiActController() {
 
     }
 
-    public static RegisterAPI getInstance() {
-        if (registerAPI == null) {
-            return new RegisterAPI();
+
+    public static RegisterApiActController getRegisterApiActController() {
+        if (act == null) {
+            return new RegisterApiActController();
         }
-        return registerAPI;
+        return act;
     }
 
     public Response register(RegisterRequestBody request, int statusCode) {
@@ -29,4 +30,5 @@ public class RegisterAPI {
                 .setTargetStatusCode(statusCode)
                 .perform();
     }
+
 }
