@@ -24,7 +24,7 @@ public class LoginPageGetController {
 
     public static LoginPageGetController getLoginPageGetController() {
         if (get == null) {
-            return new LoginPageGetController();
+            get = new LoginPageGetController();
         }
         return get;
     }

@@ -15,7 +15,7 @@ public class HomePageActController {
 
     public static HomePageActController getHomePageActController() {
         if (act == null) {
-            return new HomePageActController();
+            act = new HomePageActController();
         }
         return act;
     }

@@ -22,12 +22,16 @@ public class TodoApiVerifyController {
 
     public static TodoApiVerifyController getTodoApiVerifyController() {
         if (verify == null) {
-            return new TodoApiVerifyController();
+            verify = new TodoApiVerifyController();
         }
         return verify;
     }
 
     public TodoApiVerifyController statusCodeIsCorrect(Response response, int statusCode) {
+        assertThat(response.statusCode(), equalTo(statusCode));
+        return TodoApiVerifyController.getTodoApiVerifyController();
+    }
+    public TodoApiVerifyController statusCodeIsInCorrect(Response response, int statusCode) {
         assertThat(response.statusCode(), equalTo(statusCode));
         return TodoApiVerifyController.getTodoApiVerifyController();
     }

@@ -16,7 +16,7 @@ public class NewTodoPageActController {
 
     public static NewTodoPageActController getNewTodoPageActController() {
         if (act == null) {
-            return new NewTodoPageActController();
+            act = new NewTodoPageActController();
         }
         return act;
     }

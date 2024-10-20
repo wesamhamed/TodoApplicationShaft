@@ -16,7 +16,7 @@ public class RegisterPageVerifyController {
 
     public static RegisterPageVerifyController getRegisterPageVerifyController() {
         if (verify == null) {
-            return new RegisterPageVerifyController();
+            verify = new RegisterPageVerifyController();
         }
         return verify;
     }
@@ -24,7 +24,7 @@ public class RegisterPageVerifyController {
 
     @Step("Check if the error message is displayed")
     public RegisterPageVerifyController errorMessageIsDisplayed(SHAFT.GUI.WebDriver driver) {
-       isDisplayed(driver, RegisterPageGetController.getRegisterPageGetController().getErrorMessageLocator());
+        isDisplayed(driver, RegisterPageGetController.getRegisterPageGetController().getErrorMessageLocator());
         return this;
     }
 

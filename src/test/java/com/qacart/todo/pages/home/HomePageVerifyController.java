@@ -10,7 +10,7 @@ public class HomePageVerifyController {
 
     public static HomePageVerifyController getHomePageVerifyController() {
         if (verify == null) {
-            return new HomePageVerifyController();
+            verify = new HomePageVerifyController();
         }
         return verify;
     }

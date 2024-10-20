@@ -33,7 +33,7 @@ public class SeedApi {
 
     public static SeedApi getSeedAPi() {
         if (seedApi == null) {
-            return new SeedApi(SeedApiGetController.getSeedApiGetController(), SeedApiActController.getSeedApiActController(), SeedApiVerifyController.getSeedApiVerifyController());
+            seedApi = new SeedApi(SeedApiGetController.getSeedApiGetController(), SeedApiActController.getSeedApiActController(), SeedApiVerifyController.getSeedApiVerifyController());
         }
         return seedApi;
     }

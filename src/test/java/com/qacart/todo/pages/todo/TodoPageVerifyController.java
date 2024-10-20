@@ -17,7 +17,7 @@ public class TodoPageVerifyController {
 
     public static TodoPageVerifyController getTodoPageVerifyController() {
         if (verify == null) {
-            return new TodoPageVerifyController();
+            verify = new TodoPageVerifyController();
         }
         return verify;
     }

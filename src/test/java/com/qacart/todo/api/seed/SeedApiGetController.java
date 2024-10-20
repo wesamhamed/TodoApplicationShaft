@@ -9,7 +9,7 @@ public class SeedApiGetController {
 
     public static SeedApiGetController getSeedApiGetController() {
         if (get == null) {
-            return new SeedApiGetController();
+            get = new SeedApiGetController();
         }
         return get;
     }

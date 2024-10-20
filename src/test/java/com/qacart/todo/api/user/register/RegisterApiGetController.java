@@ -15,7 +15,7 @@ public class RegisterApiGetController {
 
     public static RegisterApiGetController getRegisterApiGetController() {
         if (get == null) {
-            return new RegisterApiGetController();
+            get = new RegisterApiGetController();
         }
         return get;
     }

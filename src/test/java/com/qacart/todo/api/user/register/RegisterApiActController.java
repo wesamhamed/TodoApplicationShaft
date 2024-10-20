@@ -17,7 +17,7 @@ public class RegisterApiActController {
 
     public static RegisterApiActController getRegisterApiActController() {
         if (act == null) {
-            return new RegisterApiActController();
+            act = new RegisterApiActController();
         }
         return act;
     }

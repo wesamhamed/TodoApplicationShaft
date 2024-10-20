@@ -17,7 +17,7 @@ public class LoginPageVerifyController {
 
     public static LoginPageVerifyController getLoginPageVerifyController() {
         if (verify == null) {
-            return new LoginPageVerifyController();
+            verify = new LoginPageVerifyController();
         }
         return verify;
     }

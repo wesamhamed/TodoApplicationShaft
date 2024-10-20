@@ -10,7 +10,7 @@ public class SeedApiVerifyController {
 
     public static SeedApiVerifyController getSeedApiVerifyController() {
         if (verify == null) {
-            return new SeedApiVerifyController();
+            verify = new SeedApiVerifyController();
         }
         return verify;
     }

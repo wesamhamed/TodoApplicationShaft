@@ -20,7 +20,7 @@ public class LoginPageActController {
 
     public static LoginPageActController getLoginPageActController() {
         if (act == null) {
-            return new LoginPageActController();
+            act = new LoginPageActController();
         }
         return act;
     }

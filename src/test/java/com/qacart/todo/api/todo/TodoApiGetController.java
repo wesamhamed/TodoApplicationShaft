@@ -17,7 +17,7 @@ public class TodoApiGetController {
 
     public static TodoApiGetController getTodoApiGetController() {
         if (get == null) {
-            return new TodoApiGetController();
+            get = new TodoApiGetController();
         }
         return get;
     }

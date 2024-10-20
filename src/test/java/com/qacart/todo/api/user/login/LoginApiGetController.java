@@ -15,7 +15,7 @@ public class LoginApiGetController {
 
     public static LoginApiGetController getLoginApiGetController() {
         if (get == null) {
-            return new LoginApiGetController();
+            get = new LoginApiGetController();
         }
         return get;
     }

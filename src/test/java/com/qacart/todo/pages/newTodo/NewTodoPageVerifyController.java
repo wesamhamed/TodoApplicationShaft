@@ -10,7 +10,7 @@ public class NewTodoPageVerifyController {
 
     public static NewTodoPageVerifyController getNewTodoPageVerifyController() {
         if (verify == null) {
-            return new NewTodoPageVerifyController();
+            verify = new NewTodoPageVerifyController();
         }
         return verify;
     }

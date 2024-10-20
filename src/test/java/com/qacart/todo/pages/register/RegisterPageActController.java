@@ -18,7 +18,7 @@ public class RegisterPageActController {
 
     public static RegisterPageActController getRegisterPageActController() {
         if (act == null) {
-            return new RegisterPageActController();
+            act = new RegisterPageActController();
         }
         return act;
     }

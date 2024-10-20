@@ -15,7 +15,7 @@ public class SeedApiActController {
 
     public static SeedApiActController getSeedApiActController() {
         if (act == null) {
-            return new SeedApiActController();
+            act = new SeedApiActController();
         }
         return act;
     }

@@ -17,7 +17,7 @@ public class TodoApiActController {
 
     public static TodoApiActController getTodoApiActController() {
         if (act == null) {
-            return new TodoApiActController();
+            act = new TodoApiActController();
         }
         return act;
     }

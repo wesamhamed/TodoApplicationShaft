@@ -26,7 +26,7 @@ public class RegisterPageGetController {
 
     public static RegisterPageGetController getRegisterPageGetController() {
         if (get == null) {
-            return new RegisterPageGetController();
+            get = new RegisterPageGetController();
         }
         return get;
     }

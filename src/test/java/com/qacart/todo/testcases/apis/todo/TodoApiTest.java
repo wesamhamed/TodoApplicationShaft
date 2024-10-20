@@ -78,7 +78,7 @@ public class TodoApiTest {
                 .error(response);
 
         todoApi.verify()
-                .statusCodeIsCorrect(response, 400)
+                .statusCodeIsInCorrect(response, 400)
                 .isCompletedIsRequired(returnedError);
 
     }

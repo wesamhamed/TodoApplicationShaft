@@ -13,7 +13,7 @@ public class HomePageGetController {
 
     public static HomePageGetController getHomePageGetController() {
         if (get == null) {
-            return new HomePageGetController();
+            get = new HomePageGetController();
         }
         return get;
     }

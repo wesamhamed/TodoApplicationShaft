@@ -17,7 +17,7 @@ public class TodoPageGetController {
 
     public static TodoPageGetController getTodoPageGetController() {
         if (get == null) {
-            return new TodoPageGetController();
+            get = new TodoPageGetController();
         }
         return get;
     }

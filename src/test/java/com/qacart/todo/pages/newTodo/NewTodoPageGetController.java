@@ -17,7 +17,7 @@ public class NewTodoPageGetController {
 
     public static NewTodoPageGetController getNewTodoPageGetController() {
         if (get == null) {
-            return new NewTodoPageGetController();
+            get = new NewTodoPageGetController();
         }
         return get;
     }

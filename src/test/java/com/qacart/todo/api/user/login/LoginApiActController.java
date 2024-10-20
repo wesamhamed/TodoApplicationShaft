@@ -16,7 +16,7 @@ public class LoginApiActController {
 
     public static LoginApiActController getLoginApiActController() {
         if (act == null) {
-            return new LoginApiActController();
+            act = new LoginApiActController();
         }
         return act;
     }

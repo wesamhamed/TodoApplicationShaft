@@ -20,7 +20,7 @@ public class LoginApiVerifyController {
 
     public static LoginApiVerifyController getLoginApiVerifyController() {
         if (verify == null) {
-            return new LoginApiVerifyController();
+            verify = new LoginApiVerifyController();
         }
         return verify;
     }

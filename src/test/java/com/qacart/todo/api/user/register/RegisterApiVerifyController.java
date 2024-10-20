@@ -19,7 +19,7 @@ public class RegisterApiVerifyController {
 
     public static RegisterApiVerifyController getRegisterApiVerifyController() {
         if (verify == null) {
-            return new RegisterApiVerifyController();
+            verify = new RegisterApiVerifyController();
         }
         return verify;
     }

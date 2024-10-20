@@ -18,7 +18,7 @@ public class TodoPageActController {
 
     public static TodoPageActController getTodoPageActController() {
         if (act == null) {
-            return new TodoPageActController();
+            act = new TodoPageActController();
         }
         return act;
     }
